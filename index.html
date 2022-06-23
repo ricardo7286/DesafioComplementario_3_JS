@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./JS/script.js"></script>
+    <link rel= icon href="./media/imagenes/expediente.png">
+    <title>Sistema de Gestion Integral Electrónico de Pacientes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./media/imagenes/expediente.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Sistema de Gestion Integral Electrónico de Pacientes
+          </a>
+        </div>
+      </nav>
+    <div class="container">
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-3">
+          <label for="validationCustom01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre del paciente" required>
+          <div class="valid-feedback">
+            ¡Se ve bien!
+          </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom01" class="form-label">Apellido paterno</label>
+            <input type="text" class="form-control" id="apellidoPaterno" placeholder="Apellido paterno del paciente" required>
+            <div class="valid-feedback">
+              ¡Se ve bien!
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom01" class="form-label">Apellido materno</label>
+            <input type="text" class="form-control" id="apellidoMaterno" placeholder="Apellido materno del paciente" required>
+            <div class="valid-feedback">
+              ¡Se ve bien!
+            </div>
+          </div>
+        <div class="col-md-3">
+            <label for="validationCustom01" class="form-label">Fecha de nacimiento</label>
+            <input type="text" class="form-control" id="fechaNac" placeholder="Ejemplo: 07/02/1986" required>
+            <div class="valid-feedback">
+              ¡Se ve bien!
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom01" class="form-label">Sexo</label>
+            <select class="form-control" id="sexo" required>
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+            </select>
+            <div class="valid-feedback">
+              ¡Se ve bien!
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom01" class="form-label">Diagnostico</label>
+            <input type="text" class="form-control" id="diagnostico" placeholder="Ingrese aqui el diagnostico del paciente" required>
+            <div class="valid-feedback">
+              ¡Se ve bien!
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom01" class="form-label">Tension arterial</label>
+            <input type="text" class="form-control" id="ta" placeholder="Ejemplo: 120/80" required>
+            <div class="valid-feedback">
+              ¡Se ve bien!
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom01" class="form-label">Frecuencia cardiaca</label>
+            <input type="text" class="form-control" id="fc" placeholder=" Ejemplo: 80" required>
+            <div class="valid-feedback">
+              ¡Se ve bien!
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom01" class="form-label">Frecuencia respiratoria</label>
+            <input type="text" class="form-control" id="fr" placeholder="Ejemplo: 20" required>
+            <div class="valid-feedback">
+              ¡Se ve bien!
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom01" class="form-label">SpO2</label>
+            <input type="text" class="form-control" id="spo2" placeholder="Ejemplo: 98" required>
+            <div class="valid-feedback">
+              ¡Se ve bien!
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="validationCustom01" class="form-label">Nota de Evolucion</label>
+            <input type="text" class="form-control" id="notaEvolucion" placeholder="Registre aqui su nota de evolucion" required>
+            <div class="valid-feedback">
+              ¡Se ve bien!
+            </div>
+        <div class="mb-3">
+            <div class="form-group">
+              <label for="inputAge">Click para agregar nuevo paciente</label>
+              <div>
+
+              </div>
+              <a class="btn btn-primary" onclick="registrarPaciente()">Agregar</a>
+            </div>
+          </div>
+      </form>
+    </div>
+
+
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="listaPacientes">
+
+          </div>
+
+    <script src="./JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
